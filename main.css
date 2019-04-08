@@ -27,12 +27,14 @@
 
 /* Início: CSS da row que contém as 3 colunas */
 .conteudo {
-    background: ivory;
+   background: #f5f6fa;
     height: auto;
     padding-top: 20px;
 }
 
-
+.tituloConteudo{
+    margin-left: 20px;
+}
 .conteudo_interno{
 
     margin-bottom: 10px;
@@ -116,7 +118,7 @@
     font-size: 12px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: grey;
-    padding-left: 0px;
+    padding-left: 0px;  
 }
 
 
@@ -137,6 +139,11 @@
     
   }
 
+.btn-estoque{
+    background-color: #2ecc71;
+    width: 287px;
+  
+}
 
 .navbarShadow {
     -webkit-box-shadow: 0 8px 6px -6px #999;
@@ -145,8 +152,6 @@
 
     /* the rest of your styling */
 }
-
-
 
 
 
@@ -164,6 +169,8 @@
     margin: 0px 10px 0px 0px; 
 }
     
+
+
 .conteudo_interno_rh{
 
     margin-bottom: 10px;
