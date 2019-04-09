@@ -28,8 +28,8 @@
 /* Início: CSS da row que contém as 3 colunas */
 .conteudo {
    background: #f5f6fa;
-    height: auto;
     padding-top: 20px;
+    min-height: 100%;
 }
 
 .tituloConteudo{
@@ -125,7 +125,6 @@
 
 .footer {
     background: #2ecc71;;
-    height: 50px;
 }
  
 .footer p {
