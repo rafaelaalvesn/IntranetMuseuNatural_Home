@@ -6,19 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Gestão Ambiental</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 </head>
 
@@ -28,7 +25,7 @@
             <div class="col col-12">
                 <nav id="nav" class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color:white;">
                     <a class="navbar-brand" href="#">
-                        <img src="img/logo_png.png" width="230" height="60" class="d-inline-block align-top" alt="">
+                        <img src="img/logo_png.png" width="200" height="50" class="d-inline-block align-top" alt="">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,20 +82,21 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Alimentos
                             </button>
+                            <hr>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Café</a>
-                                <a class="dropdown-item" href="#">Açucar</a>
-                                <a class="dropdown-item" href="#">Sal</a>
+                                <a class="dropdown-item" href="#" onclick="btnCafe()">Café</a>
+                                <a class="dropdown-item" href="#" onclick="btnAcucar()">Açucar</a>
+                                <a class="dropdown-item" href="#" onclick="btnSal()">Sal</a>
                             </div>
                         </div>
                     </div>
-                    <hr>
+                   
                     <div class="row">
                         <div class="card" style="width: 18rem;">
-                            <img src="img/estoque.png" class="card-img-top" alt="...">
+                            <img src="img/estoque.png" class="card-img-top" alt="..." id="imgCardImgAlimentos">
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <p class="card-text">Diga não ao despedício: Você sabia que um terço dos alimentos
+                                    produzidos no planeta são despediçados por ano?!</p>
                             </div>
                         </div>
                     </div>
@@ -112,20 +110,20 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Produtos Higienicos
                             </button>
+                            <hr>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Papel Higiênico</a>
-                                <a class="dropdown-item" href="#">Papel Toalha</a>
-                                <a class="dropdown-item" href="#">Álcool em Gel</a>
+                                <a class="dropdown-item" href="#" onclick="btnPapelHigienico()">Papel Higiênico</a>
+                                <a class="dropdown-item" href="#" onclick="btnPapelToalha()">Papel Toalha</a>
+                                <a class="dropdown-item" href="#" onclick="btnAlcoolEmGel()">Álcool em Gel</a>
                             </div>
                         </div>
-                    </div>
-                    <hr>
+                    </div>               
                     <div class="row">
                         <div class="card" style="width: 18rem;">
-                            <img src="img/estoque.png" class="card-img-top" alt="...">
+                            <img src="img/estoque.png" class="card-img-top" alt="..." id="imgCardImgProdHigienicos">
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <p class="card-text">Você sabia que produzir um quilo de papel consome 540 litros de
+                                    água? Faça seu papel: economize!</p>
                             </div>
                         </div>
                     </div>
@@ -139,20 +137,21 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Materiais de Escritório
                             </button>
+                            <hr>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" href="#" onclick="btnCaneta()">Caneta Esferográfica</a>
                                 <a class="dropdown-item" href="#" onclick="btnLapis()">Lápis</a>
                                 <a class="dropdown-item" href="#" onclick="btnPostIt()">Post-it</a>
                             </div>
                         </div>
-                    </div>
-                    <hr>
+                    </div>              
                     <div class="row">
                         <div class="card" style="width: 18rem;">
                             <img src="img/estoque.png" class="card-img-top" alt="..." id="imgCardImgMatEscritorio">
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <p class="card-text">Tão importante quanto semear flores, é semear ideias. Fale com
+                                    outras pessoas sobre a importância de cuidar do planeta. Você vai estar
+                                    contribuindo para o florescimento de uma ótima causa.</p>
                             </div>
                         </div>
                     </div>
@@ -168,5 +167,6 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <div class="sidebar-wrapper">
- <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
 </html>
